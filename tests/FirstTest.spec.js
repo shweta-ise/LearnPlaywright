@@ -11,7 +11,7 @@ await expect(page).toHaveTitle("Amazon.com");
 
 });
 
-test.only ('Verify LoginPage', async ({page})=>
+test ('Verify LoginPage', async ({page})=>
 {
 
  await page.goto("https://rahulshettyacademy.com/loginpagePractise/");
