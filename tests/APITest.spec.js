@@ -2,7 +2,7 @@ import { test, expect,request } from '@playwright/test';
 const endpoint  = 'https://jsonplaceholder.typicode.com/posts';
 
 
-test.only ('Verify statuscode',async ()=> {
+test ('Verify statuscode',async ()=> {
 const APIcontext =  await request.newContext();
 
 const APIresponse = await APIcontext.get('https://jsonplaceholder.typicode.com/posts');
@@ -21,7 +21,7 @@ expect(first).toHaveProperty('userId');
 expect(first).toHaveProperty('id');
 expect(first).toHaveProperty('title');
 expect(first).toHaveProperty('body');
-//expect(first).toHaveProperty('baady');
+
 
 
 });
